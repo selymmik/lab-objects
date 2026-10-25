@@ -140,7 +140,7 @@ class Tweet:
         # TODO: split the text into words; keep the ones starting with '#',
         # returning each one without its leading '#'
         hashy = []
-        text = self.text.split(" ")
+        text = self.text.split()
         for string in text:
             if string[0] == "#":
                 hashy.append(string[1:])
